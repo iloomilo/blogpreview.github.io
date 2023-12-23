@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+:root {
+    --p-color: hsl(47, 88%, 63%);
+    --main--black: hsl(0, 0%, 7%);
+    --main-grey: hsl(0, 0%, 50%);
+    --main-white: hsl(0, 0%, 100%);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--p-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Figtree', sans-serif;
+    flex-direction: column;
+}
+
+section {
+    background: var(--main-white);
+    border: 1px solid var(--main--black);
+    border-radius: 1.4rem;
+    padding: 1.5rem;
+    display: flex ;
+    flex-direction: column;
+    box-shadow: 0.5rem 0.5rem var(--main--black);
+    transition: all 0.2s ease-in-out;
+}
+
+@media(min-width: 600px) {
+    section {
+        width: 22%;
+    }
+}
+
+section:hover {
+    box-shadow: 1rem 1rem var(--main--black);
+}
+
+section > img {
+    border-radius: 0.6rem;
+}
+
+.blog-label {
+    background-color: var(--p-color);
+    width: fit-content;
+    text-align: center;
+    font-weight: bold;
+    padding: .3rem .7rem;
+    border-radius: 3.5px;
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+}
+
+.date {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+p {
+    color: var(--main-grey);
+    margin: 0;
+}
+
+.extracontainer { 
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.extracontainer > img {
+    width: auto;
+    max-height: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main--black);
+}
+
+a:hover {
+    color: var(--p-color);
+}
+
+.attribution { font-size: 11px; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%); }
